@@ -128,10 +128,10 @@ class CrewAIHandle(AdapterHandle):
         self.transport.reachable = True
 
     def break_ledger(self):
-        self.transport.writable = True
+        self.transport.writable = False
 
     def heal_ledger(self):
-        self.transport.writable = False
+        self.transport.writable = True
 
     def block_module(self, module):
         self.blocked.add(module)
