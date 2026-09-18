@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "residual-crewai"
+version = "1.0.0"
+description = "CrewAI event-listener adapter for RESIDUAL run attestation"
+requires-python = ">=3.10"
+dependencies = ["residual-sdk>=1.0.0", "crewai>=1.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

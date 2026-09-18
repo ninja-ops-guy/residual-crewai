@@ -1,0 +1,6 @@
+"""residual-crewai: CrewAI event-listener adapter for RESIDUAL attestation."""
+
+from .listener import ResidualCrewAIListener
+
+__version__ = "1.0.0"
+__all__ = ["ResidualCrewAIListener"]
